@@ -1,0 +1,10 @@
+%h2.text-center Projects
+-@projects.each do |project|
+	%div.row-fluid
+		%a{href: project_url(project.slug)}
+			%h3.span4.text-center=project.title 
+		%p.lead.span4.text-center=project.summary 
+		- if project.picture_url
+			%a{href: project_url(project.slug)}
+				%div.text-center.span4
+					%img.fill.img-rounded.img-responsive{src: "/assets/#{project.picture_url}"}

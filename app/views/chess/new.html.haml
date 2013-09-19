@@ -1,0 +1,26 @@
+%div.container.text-center
+	%div.row-fluid
+		%h3 Chess Configuration
+	%div.row-fluid
+		%div.span4.offset4
+			%h4 Rule Book
+			%div.col-xs-12.btn-group-vertical#rulebook{"data-toggle" => "buttons-radio"}
+				%button.btn.btn-success{type: "button", name: 'rulebook', value: "LosingChess", id: "Losing"} Losing Chess
+				%button.btn.btn-success{type: "button", name: 'rulebook', value: "Standard", id: "Standard"} Standard
+	%div.row-fluid
+		%div.span4
+			%h4 White Player
+			%div.col-xs-12.btn-group-vertical{"data-toggle" => "buttons-radio"}
+				%button.btn.btn-success{type: "button", name: "whitePlayer", id: "Wh", value: "HumanPlayer"} Human Player
+				%button.btn.btn-success{type: "button", name: "whitePlayer", id: "Wr", value: "RandomPlayer"} Random Player
+				%button.btn.btn-success{type: "button", name: "whitePlayer", id: "Wa", value: "AIPlayer"} AI
+		%div.span4.offset4
+			%h4 Black Player
+			%div.col-xs-12.btn-group-vertical{"data-toggle" => "buttons-radio"}
+				%button.btn.btn-success{type: "button", name: "blackPlayer", id: "Bh", value: "HumanPlayer"} Human Player
+				%button.btn.btn-success{type: "button", name: "blackPlayer", id: "Br", value: "RandomPlayer"} Random Player
+				%button.btn.btn-success{type: "button", name: "blackPlayer", id: "Ba", value: "AIPlayer"} AI
+	%br
+	%div.row-fluid
+		%div.span12
+			%div.btn.btn-primary#submit{style: "font-size: 30px;"} Begin!

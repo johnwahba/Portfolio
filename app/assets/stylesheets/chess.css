@@ -1,0 +1,37 @@
+.body {
+	background: #abdc28 !important;
+	padding: 20px !important;
+	box-sizing: inherit !important;
+}
+
+.chessboard {
+	width:100% !important;
+	padding-bottom:100% !important;
+
+}
+
+.square {
+    width: 12.5% !important; 
+    height: 12.5% !important;
+    display:inline-block !important;
+}
+
+.black{
+	background-color: blue !important;
+}
+
+.white{
+	background-color: white !important;
+}
+
+.highlighted-piece {
+	background: yellow !important;
+}
+.highlighted-move {
+	background: cyan !important;
+}
+
+.piece {
+	height:100% !important;
+	width:100% !important;
+}

@@ -1,0 +1,11 @@
+%div.container
+	%h2.text-info.text-center= @project.title
+%div.container
+	%p.lead.text-center=@project.summary
+	%a{href: "#{@project.url}"}
+		%h3.text-center Link
+	%a{href: @project.git_url}
+		%h3.text-center Github
+-if @project.picture_url	
+	%div.container
+		%img.container.img-rounded.img-responsive{src: "/assets/#{@project.picture_url}"}

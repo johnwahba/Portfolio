@@ -1,0 +1,17 @@
+<head>
+	<link rel="stylesheet" href="/assets/chess.css" />
+	<script src="/assets/jquery-1.9.1.js"></script> 
+	<script type="text/javascript" src="/assets/chessboard.js"></script>
+</head>
+<body class="body">
+  	<script type="text/javascript" src="/assets/chessboardUI.js"></script>
+<div class='chessboard'>
+</div>
+	<script type="text/javascript">
+		$(function(){
+			debugger
+			b = new Chess.Game( Chess.<%=params[:white_player]%>, Chess.<%=params[:black_player]%>, Chess.<%=params[:rule_book]%>); 
+			a = new Chess.ChessUI(b);
+		});
+	</script>
+</body>
